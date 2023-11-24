@@ -39,14 +39,14 @@ public class CollectionsAssignmentTest {
         final boolean result = CollectionsAssignment.containsDuplicates(numbers);
         assertThat(result, is(true));
 
-        numbers.remove(12);
+        numbers.remove((Integer)12);
         final boolean anotherResult = CollectionsAssignment.containsDuplicates(numbers);
         assertThat(anotherResult, is(false));
     }
 
     @Test
     @DisplayName("returns a list of elements in either collection")
-     void isInEither() {
+    void isInEither() {
         final HashSet<Integer> integers = new HashSet<>(Arrays.asList(8, 1, 5, 4, 3, 0, 6, 2, 9, 7));
 
         final ArrayList<Integer> result = CollectionsAssignment.inEither(numbers, integers);
