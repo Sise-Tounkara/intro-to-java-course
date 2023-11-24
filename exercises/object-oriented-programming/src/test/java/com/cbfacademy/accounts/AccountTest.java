@@ -80,8 +80,8 @@ public class AccountTest {
 
         String accountString = account.toString();
 
-        assertThat(accountString, containsString("Account no: 12345"));
-        assertThat(accountString, containsString("Balance: £100.00"));
+        assertThat(accountString, containsString("Account no: 12345 Balance: £100.00"));
+        //assertThat(accountString, containsString("Balance: £100.00"));
     }
 }
 
