@@ -8,8 +8,11 @@ public class App {
         System.out.println("Hello world!");
 
         List<Integer> myList = new ArrayList<>(List.of(2,5,10,22,67,99));
-        int indexOfMyElement = LinearSearch.linearSearch(myList,80);
+        int indexOfMyElement = LinearSearch.linearSearch(myList,99);
+
+        int indexOfMyElement2 = BinarySearch.binarySearch(myList, 99);
 
         System.out.println(indexOfMyElement);
+        System.out.println(indexOfMyElement2);
     }
 }
